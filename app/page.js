@@ -40,7 +40,7 @@ export default function App() {
     email: "erincongil@gmail.com",
     location: "Maracaibo, Venezuela",
     experienceYears: "8+ Años",
-    specialties: ["Sistemas ERP & POS", "Control de Almacenes (WMS)", "Migración de Legacy Code", "Automatización de Procesos"]
+    specialties: ["Sistemas ERP & POS", "Control de Almacenes (WMS)", "Migración de Legacy Code", "Automatización de Procesos", "Integración de Sistemas", "Diseño y Administración de Bases de Datos"]
   };
 
   const experiences = [
@@ -282,13 +282,13 @@ export default function App() {
                   )}
                 </button>
 
-                <a
+                {/* <a
                   href={`mailto:${personalData.email}`}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm border border-slate-700 transition-all duration-200"
                 >
                   <ExternalLink className="w-4 h-4 text-slate-400" />
                   Enviar Email Directo
-                </a>
+                </a> */}
               </div>
 
             </div>
@@ -396,7 +396,7 @@ export default function App() {
                     </ul>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-800">
+                  {/* <div className="pt-4 border-t border-slate-800">
                     <p className="text-xs text-slate-400 mb-2">Contacto directo por correo:</p>
                     <div className="flex items-center justify-between bg-slate-950 p-2.5 rounded-xl border border-slate-800">
                       <span className="text-xs text-cyan-400 truncate font-mono">{personalData.email}</span>
@@ -408,7 +408,7 @@ export default function App() {
                         {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
               </div>
@@ -450,8 +450,8 @@ export default function App() {
                     <Cpu className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-white">IA Integration</h4>
-                    <p className="text-xs text-slate-400">Herramientas Modernas</p>
+                    <h4 className="text-xl font-bold text-white">AI Integration</h4>
+                    <p className="text-xs text-slate-400">Inteligencia Artificial</p>
                   </div>
                 </div>
               </div>
