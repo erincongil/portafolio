@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import LanguageSwitch from './components/LanguageSwitch';
 
 import {
   User,
@@ -213,6 +214,11 @@ export default function App() {
         <header className="mb-10 bg-slate-900/60 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-cyan-500/20 to-transparent rounded-bl-full pointer-events-none" />
 
+          {/* Language Switcher in top right */}
+          <div className="flex justify-end mb-4 sm:mb-0 sm:absolute sm:top-6 sm:right-6 z-20">
+            <LanguageSwitch currentLang="es" />
+          </div>
+
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
 
             {/* Avatar / Profile Graphic */}
@@ -372,7 +378,7 @@ export default function App() {
                     Perfil Profesional
                   </h2>
                   <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                    Soy un Programador Senior apasionado por la construcción de sistemas eficientes, escalables y orientados a la solución de problemas complejos de negocio. Cuento con una sólida trayectoria en el desarrollo backend con <span className="text-cyan-400 font-medium">Python, Django y Java</span>, así como la construcción de interfaces dinámicas con <span className="text-cyan-400 font-medium">Vue.js</span>.
+                    Programador Senior apasionado por la construcción de sistemas eficientes, escalables y orientados a la solución de problemas complejos de negocio. Cuento con una sólida trayectoria en el desarrollo backend con <span className="text-cyan-400 font-medium">Python, Django y Java</span>, así como la construcción de interfaces dinámicas con <span className="text-cyan-400 font-medium">Vue.js</span>.
                   </p>
                   <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
                     A lo largo de mi carrera he destacado por liderar procesos clave en sistemas ERP corporativos, plataformas POS y gestión de almacenes (WMS). Mi experiencia abarca desde el mantenimiento de sistemas heredados en <span className="text-cyan-400 font-medium">OpenEdge ABL</span> hasta su migración exitosa a tecnologías modernas y arquitecturas desacopladas basadas en mensajería.
